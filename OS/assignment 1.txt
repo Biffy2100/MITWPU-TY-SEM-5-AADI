@@ -1,1 +1,134 @@
 Q1 Define Operating System. Explain the components and role of an OS as a resource manager.
+
+
+2. Differentiate between user view and system view of an Operating System with suitable examples.
+ **User View vs System View of an Operating System** 
+
+| **Aspect**              | **User View**                                                                                         | **System View**                                                                                                |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Definition**          | The way the operating system appears to the **end user** who interacts with the system.               | The way the operating system appears to the **hardware/system**, focusing on internal management.              |
+| **Primary Focus**       | Convenience, ease of interaction, and efficiency for performing tasks.                                | Efficient utilization and management of system resources like CPU, memory, I/O devices, and storage.           |
+| **Objective**           | To provide a user-friendly environment where tasks can be completed with minimal technical knowledge. | To ensure the system runs efficiently, reliably, and securely by managing all resources.                       |
+| **Interaction**         | Direct interaction with applications, GUIs, and commands.                                             | Interaction happens between OS and hardware through kernel modules, drivers, and resource management routines. |
+| **Perspective**         | End user sees OS as a tool to perform tasks (open apps, browse internet, play music, etc.).           | OS is seen as a resource manager that coordinates hardware and software processes.                             |
+| **Ease vs Efficiency**  | Prioritizes **ease of use** even if it sacrifices some efficiency.                                    | Prioritizes **efficiency and performance** even if the system is less intuitive for users.                     |
+| **Examples**            | - A student using Windows to type assignments in MS Word. <br> - Playing a video on Android.          | - OS scheduling CPU cycles between processes. <br> - Memory allocation when multiple apps run simultaneously.  |
+| **OS Types Emphasized** | Desktop OS (Windows, macOS), Mobile OS (Android, iOS).                                                | Server OS (Linux, Unix), Real-time OS (RTOS), Embedded OS.                                                     |
+| **Key Role**            | Acts as a **convenient interface** between the user and the system.                                   | Acts as a **resource manager** to optimize system performance.                                                 |
+
+
+3. Explain various operations performed by an Operating System.
+
+Here’s a structured and detailed answer to **“Explain various operations performed by an Operating System”**:
+
+---
+
+## **Operations Performed by an Operating System**
+
+An **Operating System (OS)** is the software that manages hardware, software, and resources, providing services to both users and applications. Its operations can be broadly divided into the following categories:
+
+---
+
+### 1. **Program / Process Management**
+
+* **Definition**: A process is a program in execution, requiring resources like CPU, memory, I/O, and files.
+* **Key Functions**:
+
+  * Create and delete user/system processes.
+  * Suspend and resume processes.
+  * Provide **synchronization** between processes.
+  * Provide **communication** between processes.
+  * Handle **deadlocks** (when processes wait indefinitely for resources).
+* **Example**: Running a browser, media player, and text editor simultaneously. OS manages CPU time among them.
+
+---
+
+### 2. **Resource Management**
+
+Resources like memory, CPU, storage, and I/O devices must be allocated efficiently.
+
+#### a) **Memory Management**
+
+* Ensures programs and data reside in main memory for execution.
+* **Activities**:
+
+  * Keep track of memory usage (who is using what).
+  * Decide which process/data stays in memory.
+  * Allocate and deallocate memory dynamically.
+* **Example**: When opening multiple tabs in a browser, the OS decides memory allocation to each tab.
+
+#### b) **File System Management**
+
+* Provides logical abstraction of physical storage.
+* **Activities**:
+
+  * Create, delete, and organize files/directories.
+  * Map files onto secondary storage (HDD/SSD).
+  * Manage access permissions for files.
+  * Backup files to non-volatile storage.
+* **Example**: Saving a Word document in a folder and later retrieving it.
+
+#### c) **I/O Subsystem Management**
+
+* Manages communication between applications and hardware devices.
+* **Techniques**:
+
+  * **Buffering** – temporary storage during transfers.
+  * **Caching** – storing frequently used data for faster access.
+  * **Spooling** – overlapping I/O operations (e.g., print jobs queued while CPU works).
+* **Example**: While printing a document, the CPU continues processing other tasks, as the print job is spooled.
+
+---
+
+### 3. **Security and Protection**
+
+* **Protection**: Ensures controlled access to resources by processes or users.
+* **Security**: Safeguards the system against threats (malware, unauthorized access, data theft).
+* **Mechanisms**:
+
+  * User IDs and authentication.
+  * Access control lists (permissions on files/resources).
+  * Privilege escalation management.
+* **Example**: Login credentials on Windows, restricting access to administrator settings.
+
+---
+
+### 4. **Concurrency and CPU Scheduling**
+
+* OS manages multiple processes/threads running simultaneously.
+* **Single-threaded process** → one program counter.
+* **Multi-threaded process** → multiple program counters (one per thread).
+* OS schedules CPU time fairly and efficiently among processes.
+* **Example**: Watching a YouTube video while downloading a file and typing a document.
+
+---
+
+### 5. **User Interaction and System Services**
+
+* Provides **command-line interface (CLI)** or **graphical user interface (GUI)** for users.
+* Offers system calls and APIs for applications.
+* **Example**: Windows GUI, Linux terminal, or Android home screen.
+
+---
+
+## **Summary**
+
+The major operations of an OS are:
+
+1. **Process Management** – creating, scheduling, and terminating processes.
+2. **Memory Management** – allocating and freeing memory efficiently.
+3. **File System Management** – organizing and controlling file access.
+4. **I/O Management** – handling input/output devices smoothly.
+5. **Security and Protection** – ensuring safe and authorized system usage.
+
+
+
+
+
+
+
+
+
+
+
+

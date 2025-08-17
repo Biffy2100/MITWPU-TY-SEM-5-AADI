@@ -17,5 +17,6 @@ public class a {
 
         System.out.println("The maximum value is: " + ans);
         scanner.close();
+        
     }
 }

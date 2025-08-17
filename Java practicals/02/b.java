@@ -2,9 +2,9 @@ class Mobile {
     String companyName;
     double screenSize;
 
-    public Mobile(String companyName, double screenSize) {
-        this.companyName = companyName;
-        this.screenSize = screenSize;
+    public Mobile(String c, double s) {
+        companyName = c;
+        screenSize = s;
     }
 
     public void display() {
@@ -24,5 +24,6 @@ public class b {
         for (int i = 0; i < mobiles.length; i++) {
             mobiles[i].display();
         }
+
     }
 }

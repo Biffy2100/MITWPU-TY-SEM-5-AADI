@@ -1,6 +1,5 @@
 class Cube {
     int l, b, h;
-
     // Constructor 1: All dimensions
     Cube(int l, int b, int h) {
         this.l = l;
