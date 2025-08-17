@@ -1,0 +1,1 @@
+Q1 Define Operating System. Explain the components and role of an OS as a resource manager.
