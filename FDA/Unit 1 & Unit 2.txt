@@ -1,0 +1,145 @@
+📘 Question Bank: Fundamentals of Data Analytics
+
+(Unit 1 & Unit 2)
+
+
+---
+
+Unit 1: Data Analytics Overview
+
+
+from notebook
+1. Define data analysis 
+2. What is importance of data analysis
+3. Explain process of data analysis.
+4. What are applications of data analysis
+5. What are benefits of data analysis 
+6. What are types of data analysis list, explain in detail and advantages and disadvantages of each 
+7. Write differences between data analysis and data analytics 
+8. Differentiate between data analyst and data scientist
+9. Differentiate between business analyst and business intelligence analyst 
+10. What is role of data analyst 
+11. Skills required for being a data analyst
+
+
+Short Answer / Definitions
+
+1. Define Data Analytics.
+Process of collecting, cleaning, transformaing and modeling raw data to 
+discover useful information, draw conclusions, and support decision-making.
+
+it helps us to understand what had happened in the past, why it happened, 
+what might happen in the future and what actions should be taken to achieve desired outcomes.
+
+2. Why is Data Analytics important in modern organizations?
+3. List the four types of Data Analytics.
+4. Define Descriptive Analytics with an example.
+5. Define Diagnostic Analytics with an example.
+6. Define Predictive Analytics with an example.
+7. Define Prescriptive Analytics with an example.
+8. What are the key benefits of Data Analytics?
+9. Give two real-world applications of Data Analytics.
+10. Differentiate between Data Analysis and Data Analytics.
+11. Who is a Data Analyst? State their role.
+12. Who is a Data Scientist? State their role.
+13. Differentiate between Business Analyst and Business Intelligence Analyst.
+14. What skills are required to be a Data Analyst?
+15. What responsibilities does a Data Analyst perform?
+
+
+
+Long Answer / Explain
+
+16. Explain the importance of Data Analytics in business decision-making.
+17. Discuss the four types of Data Analytics with suitable examples.
+18. Explain the benefits of Data Analytics in cost reduction and performance improvement.
+19. Compare and contrast:
+a) Data Analyst vs. Data Scientist
+b) Business Analyst vs. Business Intelligence Analyst
+20. Elaborate on the role, responsibilities, and skillsets required for a Data Analyst.
+
+---
+
+Unit 2: Dealing with Different Types of Data
+
+Short Answer / Definitions
+
+1. Define data in the context of analytics.
+
+
+2. What is numerical data? Give examples.
+
+
+3. What is categorical data? Give examples.
+
+
+4. Differentiate between structured and unstructured data.
+
+
+5. Define ordinal data with examples.
+
+
+6. Define nominal data with examples.
+
+
+7. What is text analytics?
+
+
+8. What is web analytics?
+
+
+9. What is marketing analytics?
+
+
+10. Define Data Repositories.
+
+
+11. What is a Database?
+
+
+12. Define Data Warehouse.
+
+
+13. Define Data Mart.
+
+
+14. Define Data Lake.
+
+
+15. What is a Data Pipeline?
+
+
+
+Long Answer / Explain
+
+16. Explain the key terminologies used in Data Analytics.
+
+
+17. Differentiate between numerical and categorical data with examples.
+
+
+18. Differentiate between structured and unstructured data with examples.
+
+
+19. Explain ordinal and nominal data with suitable examples.
+
+
+20. Discuss the different data formats used in analytics.
+
+
+21. Write short notes on:
+a) Text Analytics
+b) Web Analytics
+c) Marketing Analytics
+
+
+22. Compare and contrast:
+a) Database vs. Data Warehouse
+b) Data Warehouse vs. Data Mart
+c) Data Lake vs. Data Pipeline
+
+
+23. Explain the importance of data repositories in analytics.
+
+
+24. Discuss applications of text, web, and marketing analytics in industry.
