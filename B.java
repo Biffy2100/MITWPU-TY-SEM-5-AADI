@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class A {
+public class B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter size of vector: ");
         int n = sc.nextInt();
 
         Vector v = new Vector(n);
-
+.
         for (int i = 0; i < n; i++) {
             System.out.println("Enter element: ");
             int x = sc.nextInt();
