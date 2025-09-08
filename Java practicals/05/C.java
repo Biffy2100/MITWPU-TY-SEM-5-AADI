@@ -51,7 +51,7 @@ class Student implements FY, SY {
     }
 }
 
-public class A {
+public class C {
     public static void main(String[] args) {
         Student student = new Student();
 
