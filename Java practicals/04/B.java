@@ -10,8 +10,7 @@ public class B {
 
         for (int i = 0; i < n; i++) {
             System.out.println("Enter element: ");
-            int x = sc.nextInt();
-            v.add(x);
+            v.add(sc.next());
         }
 
         System.out.println("Current size of vector: " + v.size());
