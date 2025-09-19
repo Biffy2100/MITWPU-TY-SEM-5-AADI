@@ -5,6 +5,7 @@ interface FY {
     double result = 0.0;
 
     void acceptFYData(int rollNo, String name, double result);
+
     void displayFYData();
 }
 
@@ -15,6 +16,7 @@ interface SY {
     double result = 0.0;
 
     void acceptSYData(int rollNo, String name, double result);
+
     void displaySYData();
 }
 
