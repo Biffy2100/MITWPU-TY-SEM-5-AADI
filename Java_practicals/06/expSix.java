@@ -1,4 +1,4 @@
-package useful.useme;
+import ThePackage.useme;
 
 import java.util.*;
 
