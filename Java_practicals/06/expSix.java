@@ -1,6 +1,4 @@
-import ThePackage.useme;
-
-import java.util.*;
+package ThePackage;
 
 public class expSix {
     public static void main(String[] args) {
