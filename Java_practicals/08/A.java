@@ -3,6 +3,7 @@ public class A {
 
         try {
             int a = 5 / 0;
+
         } catch (ArithmeticException e) {
             System.out.println("Division by 0 not possible");
         } finally {
