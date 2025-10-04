@@ -1,0 +1,82 @@
+Got it 👍 Here’s a question bank for Unit 3 (Basics of Statistics) in Fundamentals of Data Analytics. I’ll cover definitions, short answers, and a few longer/conceptual questions so you’re exam-ready.
+
+Question Bank – Unit 3: Basics of Statistics
+
+1. Introduction & Types of Statistics-
+    
+Q1) Define Statistics. Why is it important in data analytics?
+Q2) Differentiate between Descriptive Statistics and Inferential Statistics with examples.
+Q3) What are the two main branches of statistics? Give real-world examples of each.
+
+
+2. Basic Concepts in Statistics-
+
+Q4) Define the following with examples:
+
+Population
+Sample
+Parameter
+Statistic
+Variable
+
+
+Q5) Differentiate between dependent and independent variables with an example.
+Q6) What are extraneous variables? How do they affect experiments?
+Q7) Explain the difference between continuous and discrete variables with examples.
+Q8) Classify variables into Qualitative and Quantitative with suitable examples.
+Q9) What do you mean by noise in statistics/data analysis?
+
+
+---
+
+3. Measures of Central Tendency-
+
+Q10) Define mean, median, and mode.
+Q11) When is median preferred over mean? Give an example.
+Q12) Calculate the mean, median, and mode of the dataset: 5, 7, 7, 9, 10, 10, 10, 12, 15.
+Q13) Compare mean, median, and mode in terms of sensitivity to extreme values (outliers).
+
+
+---
+
+4. Measures of Variation-
+
+Q14) Define range, variance, and standard deviation.
+Q15) Why is standard deviation considered better than variance?
+Q16) Calculate variance and standard deviation for the dataset: 4, 8, 6, 10, 12.
+Q17) Explain the importance of measuring variability in data.
+
+
+
+
+---
+
+5. Importance of Statistics
+
+Q18) State any five applications of statistics in real life and data analytics.
+Q19) Why is statistics called the “science of decision making”?
+Q20) Discuss how inferential statistics helps in hypothesis testing.
+
+
+
+
+---
+
+6. Higher-order/Conceptual-
+
+Q21. A researcher wants to study the effect of a new drug on blood pressure. Identify:
+
+Population
+Sample
+Parameter
+Statistic
+Independent variable
+Dependent variable
+Possible extraneous variable
+
+
+Q22. Explain with an example how noise in data can affect statistical analysis.
+Q23. Compare qualitative vs. quantitative data in the context of social media analytics.
+Q24. Describe a real-life situation where inferential statistics must be used instead of descriptive statistics.
+Q25. Why is it important to study both measures of central tendency and measures of variation when analyzing data?
+

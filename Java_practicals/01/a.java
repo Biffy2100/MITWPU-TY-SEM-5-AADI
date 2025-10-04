@@ -10,9 +10,7 @@ public class a {
         int ans=0;
              
         if(x>y && x>z) ans=x;
-        
         else if(y>x && y>z) ans=y;
-        
         else ans=z;
 
         System.out.println("The maximum value is: " + ans);

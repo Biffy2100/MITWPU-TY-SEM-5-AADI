@@ -3,14 +3,13 @@
 (Unit 1 & Unit 2)
 Unit 1: Data Analytics Overview
 
-
 from notebook
 1. Define data analysis 
 2. What is importance of data analysis
 3. Explain process of data analysis.
 4. What are applications of data analysis
 5. What are benefits of data analysis 
-6. What are types of data analysis list, explain in detail and advantages and disadvantages of each 
+6. What are types of data analysis list, explain in detail and advantages and disadvantages of each  
 7. Write differences between data analysis and data analytics 
 8. Differentiate between data analyst and data scientist
 9. Differentiate between business analyst and business intelligence analyst 
@@ -41,7 +40,6 @@ what might happen in the future and what actions should be taken to achieve desi
 13. Differentiate between Business Analyst and Business Intelligence Analyst.
 14. What skills are required to be a Data Analyst?
 15. What responsibilities does a Data Analyst perform?
-
 
 
 Long Answer / Explain
