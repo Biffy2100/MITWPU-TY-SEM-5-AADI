@@ -1,0 +1,55 @@
+### 🌐 **UNIT 2 – Question Bank (Fundamentals of Data Analytics)**
+
+#### **1. Basic Terminologies**
+
+1. Define *data* and *dataset*. Give one example of each.
+2. What is a *data source*? Mention three common data sources used in analytics.
+3. Explain *metadata* with an example. Why is it important?
+4. What is *ETL*? Explain each phase (Extract, Transform, Load) briefly.
+5. Define *data governance*. What are its main objectives?
+6. What are some challenges faced in data governance?
+
+#### **2. Types of Analytics**
+
+7. What is *text analytics*? Give an example of how it’s used in real life.
+8. Define *web analytics*. What kind of data is collected through it?
+9. Explain *marketing analytics* with a suitable business example.
+10. Differentiate between *text analytics*, *web analytics*, and *marketing analytics* based on data type and application.
+
+#### **3. Types of Data**
+
+11. What are the two main categories of data? Give examples.
+12. Define *numerical data*. What are its two subtypes?
+13. Differentiate between *continuous* and *discrete* data.
+14. What is *categorical data*? Give examples.
+15. Explain *structured* and *unstructured* data with examples.
+16. Define *ordinal* and *nominal* data. Give one example of each.
+17. Compare *structured*, *semi-structured*, and *unstructured* data.
+
+#### **4. Data Types**
+
+18. List and define different *data types* used in analytics.
+19. Explain the difference between *integer* and *float* data types.
+20. Give examples of *string*, *date/time*, and *boolean* data types.
+21. Why is data type selection important in data analytics?
+
+#### **5. Data Formats**
+
+22. List four common *data formats* used for data exchange.
+23. What are the advantages and disadvantages of using *CSV* format?
+24. Differentiate between *JSON* and *XML* with examples.
+25. When would you prefer *Excel* over other data formats?
+26. What types of data are included in *multimedia* formats?
+
+#### **6. Data Repositories**
+
+27. What is a *data repository*?
+28. Explain *databases* and their purpose in analytics.
+29. Define *data warehouse* and *data mart*. How are they different?
+30. What is a *data lake*? How does it differ from a data warehouse?
+31. Define *data pipeline*. What role does it play in data integration?
+32. Compare *data warehouse*, *data mart*, and *data lake* based on structure and purpose.
+
+---
+
+Would you like me to also mark **which questions are short (2 marks)** and **which are long (5–10 marks)** so you can prioritize while revising?
