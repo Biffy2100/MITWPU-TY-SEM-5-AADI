@@ -21,7 +21,7 @@ public class B {
 
         System.out.println("Enter index to remove: ");
         int r = sc.nextInt();
-        if(r >= 0 && r < v.size()){
+        if (r >= 0 && r < v.size()) {
             System.out.println("Removing element at index " + r + ": " + v.elementAt(r));
         } else {
             System.out.println("Index out of bounds");
