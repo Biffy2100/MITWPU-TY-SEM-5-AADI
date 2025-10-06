@@ -15,8 +15,7 @@ public class B {
             System.out.println("You have gone out of bounds :/");
         } finally {
             System.out.println("Sucessfull exceuted program");
+            sc.close();
         }
-
-        sc.close();
     }
 }
