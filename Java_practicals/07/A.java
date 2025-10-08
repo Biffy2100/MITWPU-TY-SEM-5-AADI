@@ -12,7 +12,7 @@ class Count implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i <= 10;) {
-            synchronized (shared) {
+            synchronized (shared) { 
                 if (shared.turn == 1) {
                     for (int j = 0; j < 2 && i <= 10; j++, i++) {
                         System.out.println(i + " by thread 1");
@@ -61,8 +61,10 @@ class Tounc implements Runnable {
 public class A {
     public static void main(String[] args) {
         Shared shared = new Shared();
+        
         Thread a = new Thread(new Count(shared));
         Thread b = new Thread(new Tounc(shared));
+
         a.start();
         b.start();
     }
