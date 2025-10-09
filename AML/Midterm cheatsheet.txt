@@ -1,0 +1,59 @@
+Perfect! Here’s a **1-page super short AML cheat sheet** — everything in **1–2 lines per question** for quick memorization:
+
+---
+
+## **1. Basics of Machine Learning**
+
+* **ML:** Computers learn patterns from data to make predictions without explicit programming.
+* **Applications:** Spam detection, image/speech recognition, recommendations, stock prediction, healthcare.
+* **Supervised ML:** Learns from labeled data. *Example:* Predict house prices from features.
+* **PAC Learning:** Learns “probably approximately correct” hypotheses. *Example:* Spam classifier 95% accurate.
+* **Model Selection & Generalization:** Pick best model that works on unseen data. *Example:* Test accuracy comparison.
+* **Dimensions of Supervised ML:** Input/output size, complexity, model type.
+
+---
+
+## **2. VC Dimension & PAC Learning**
+
+* **VC Dimension:** Max points a model can classify correctly. *Example:* Line separates 2 points → VC=2.
+* **Importance:** Measures model capacity, helps prevent overfitting.
+* **PAC Challenges:** Needs lots of data, computational resources, and assumptions about distribution.
+
+---
+
+## **3. Features & Feature Selection**
+
+* **Feature:** Characteristic of data. *Example:* Age, height.
+* **Feature Extraction:** Transform raw data into meaningful features. *Example:* Edges in an image.
+* **Forward Selection:** Start empty, add best features iteratively.
+* **Backward Selection:** Start full, remove least useful features stepwise.
+* **Feature Selection Techniques:** Filter (stats-based), Wrapper (model performance-based).
+
+---
+
+## **4. Data Preprocessing**
+
+* **Normalization:** Scale data to [0,1].
+* **Scaling:** Change range to standard scale (Min-Max).
+* **Standardization:** Zero mean, unit variance.
+* **Managing Missing Values:** Imputation (mean/median), deletion, prediction.
+
+---
+
+## **5. Dimensionality Reduction**
+
+* **PCA:** Reduce dimensions along directions with max variance. Eigenvectors = directions, eigenvalues = importance.
+* **Kernel PCA:** PCA in high-dimensional space for non-linear data.
+* **LDA:** Reduce dimensions while maximizing class separation. *Example:* Cats vs Dogs classification.
+
+---
+
+## **6. Midterm Numerical**
+
+* PCA till eigenvectors: compute covariance, eigenvalues, eigenvectors, project data onto top components.
+
+---
+
+If you want, I can also make a **mnemonic/table version for advantages/disadvantages, features, and PCA** so you can memorize everything in **10 seconds per topic** for the exam.
+
+Do you want me to do that?

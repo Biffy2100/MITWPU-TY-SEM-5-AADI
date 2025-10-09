@@ -1,0 +1,114 @@
+Got it! Here's a **Q&A-style AML revision sheet** with concise answers for your list:
+
+---
+
+## **1. Basics of Machine Learning**
+
+**Q1. Define Machine Learning (ML).**
+**A:** ML is a branch of AI where computers learn patterns from data to make predictions or decisions without being explicitly programmed.
+
+**Q2. List the applications of Machine Learning.**
+**A:** Spam detection, image recognition, speech recognition, recommendation systems, stock market prediction, healthcare diagnosis.
+
+**Q3. Explain Supervised Machine Learning with an example.**
+**A:** Supervised ML learns from labeled data (input-output pairs).
+**Example:** Predicting house prices based on features like size and location.
+
+**Q4. Explain Probably Approximately Correct (PAC) learning with an example.**
+**A:** PAC learning ensures a hypothesis is correct with high probability within a small error margin.
+**Example:** Email spam classifier with 95% accuracy.
+
+**Q5. Explain Model Selection and Generalization with an example.**
+**A:** Model selection is choosing the best model for data; generalization is performing well on unseen data.
+**Example:** Comparing decision tree vs. linear regression on test data to pick the better model.
+
+**Q6. Explain the Dimensions of Supervised Machine Learning Algorithms with an example.**
+**A:** Dimensions include input size, output size, model complexity, and type.
+**Example:** Linear regression (single output), multiclass classifier (multiple outputs).
+
+---
+
+## **2. VC Dimension & PAC Learning**
+
+**Q1. Explain VC dimension with example.**
+**A:** VC dimension measures a model’s capacity to classify points correctly.
+**Example:** A line (1D classifier) can separate 2 points in all ways → VC dimension = 2.
+
+**Q2. Why is VC important?**
+**A:** It indicates model complexity and helps understand overfitting and generalization.
+
+**Q3. What are the challenges of PAC learning?**
+**A:** Requires large amounts of labeled data, computational resources, and assumptions about data distribution.
+
+---
+
+## **3. Features and Feature Selection**
+
+**Q1. What is a feature?**
+**A:** A measurable property or characteristic of data.
+**Example:** Age, height, or income of a person.
+
+**Q2. What is feature extraction?**
+**A:** Process of transforming raw data into meaningful features for ML.
+**Example:** Converting an image into edge-detection features.
+
+**Q3. Explain forward feature selection techniques with example.**
+**A:** Start with no features and add the best features one by one.
+**Example:** Add features that improve model accuracy iteratively.
+
+**Q4. Explain backward feature selection techniques with example.**
+**A:** Start with all features and remove the least useful features step by step.
+**Example:** Remove features that reduce model performance the least.
+
+**Q5. Explain various feature selection techniques (any two).**
+**A:**
+
+* **Filter method:** Select features based on statistical measures (e.g., correlation).
+* **Wrapper method:** Select features based on model performance.
+
+**Q6. Explain any four forward feature selection techniques.**
+**A:** Correlation-based, mutual information, recursive feature addition, stepwise forward selection.
+
+**Q7. Explain any four backward feature selection techniques.**
+**A:** Recursive feature elimination, stepwise backward elimination, least important feature removal, model-based selection.
+
+---
+
+## **4. Data Preprocessing**
+
+**Q1. Explain normalization.**
+**A:** Rescaling data to a fixed range [0,1].
+
+**Q2. Explain scaling.**
+**A:** Changing the range of data features to a standard scale (like Min-Max scaling).
+
+**Q3. Explain standardization.**
+**A:** Transforming data to have zero mean and unit variance.
+
+**Q4. Explain managing missing values.**
+**A:** Handling missing data by imputation (mean, median), deletion, or prediction.
+
+---
+
+## **5. Dimensionality Reduction**
+
+**Q1. Explain PCA with core concepts and kernel PCA.**
+**A:** PCA reduces dimensions by finding directions (principal components) that maximize variance.
+**Kernel PCA** applies PCA in a higher-dimensional space using a kernel for non-linear data.
+
+**Q2. Simplify PCA with examples, eigenvalues, and eigenvectors.**
+**A:** PCA projects data onto eigenvectors of covariance matrix; eigenvalues indicate importance of each component.
+**Example:** 2D points → first component captures most variance → reduce to 1D.
+
+**Q3. Explain LDA with example.**
+**A:** LDA reduces dimensions while maximizing class separability.
+**Example:** Classifying cats vs dogs using pet image features.
+
+---
+
+## **6. Midterm Numerical**
+
+**PCA until eigenvectors** – You need to compute covariance, find eigenvalues and eigenvectors, and project data onto principal components.
+
+---
+
