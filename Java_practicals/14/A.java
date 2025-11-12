@@ -1,17 +1,29 @@
-
-//wap to implement list interface
 import java.util.ArrayList;
 import java.util.List;
 
 public class A {
     public static void main(String args[]) {
-        List<String> al = new ArrayList<>();
+        List<String> name = new ArrayList<>();
 
-        al.add("Aadi");
-        al.add("Tejas");
+        
+        name.add("Aadi"); 
+        name.add("Tejas"); 
+        name.add(1, "Kiran"); 
 
-        System.out.println(al.contains("Aadi"));
-        System.out.println(al);
+        
+        System.out.println("Contains 'Aadi'? " + name.contains("Aadi"));
+        System.out.println("List now: " + name);
+
+        
+        String removedAt0 = name.remove(0);
+        System.out.println("Removed at index 0: " + removedAt0 + " -> " + name);
+
+        
+        System.out.println("Iterating with for-each:");
+        int index = 0;
+        for (String s : name) {
+            System.out.println(index++ + ": " + s);
+        }
 
     }
 }
