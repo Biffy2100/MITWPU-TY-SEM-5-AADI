@@ -1,7 +1,6 @@
 import java.util.List;
 import java.util.LinkedList;
 
-
 public class B {
     public static void main(String[] args) {
         List<Integer> marks = new LinkedList<>();
