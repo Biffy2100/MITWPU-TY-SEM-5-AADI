@@ -7,7 +7,7 @@ class Odd extends RuntimeException {
     }
 }
 
-public class Main {
+public class B {
     // Method that declares it might throw an Even exception
     public static void check(int num) throws Odd {
         if (num % 2 != 0) {
