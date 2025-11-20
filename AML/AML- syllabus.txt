@@ -1,0 +1,105 @@
+# **Applied Machine Learning – Syllabus (Formatted)**
+
+---
+
+## **UNIT 1 — Introduction to Machine Learning**
+
+* Introduction to ML
+* Examples of ML applications
+* Learning types
+
+  * Supervised learning
+  * Learning a class from examples
+* VC Dimension
+* PAC Learning
+* Noise
+* Learning multiple classes
+* Regression
+* Model selection and generalization
+* Dimensions of a supervised ML algorithm
+
+---
+
+## **UNIT 2 — Feature Selection**
+
+* Concept of features
+* Data preprocessing
+
+  * Normalization & scaling
+  * Standardization
+  * Managing missing values
+* Introduction to dimensionality reduction
+
+  * PCA
+  * Kernel PCA (KPCA)
+  * Linear Discriminant Analysis (LDA)
+* Feature selection techniques
+
+  * Sequential Forward Selection
+  * Sequential Backward Selection
+
+---
+
+## **UNIT 3 — Regression**
+
+* Linear regression (linear models)
+* Bi-dimensional example
+* Linear regression in higher dimensions
+* Ridge regression
+* Lasso regression
+* Polynomial regression
+* Isotonic regression
+* Logistic regression
+
+  * Linear classification
+  * Logistic regression theory
+  * Implementation & optimization
+* Stochastic Gradient Descent algorithms
+* Grid search for hyperparameter tuning
+
+---
+
+## **UNIT 4 — Naive Bayes & SVM**
+
+* Bayes’ theorem
+* Naive Bayes classifiers
+* Naive Bayes in scikit-learn
+
+  * Bernoulli
+  * Multinomial
+  * Gaussian
+* Support Vector Machines (SVM)
+
+  * Linear SVM
+  * scikit-learn implementation (linear classification)
+  * Kernel-based classification
+  * Non-linear examples
+  * Controlled SVM
+
+---
+
+## **UNIT 5 — Decision Trees & Ensemble Learning**
+
+* Decision trees
+
+  * Impurity measures
+  * Feature importance
+  * scikit-learn implementation
+* Ensemble learning
+
+  * Random Forest
+  * Gradient Tree Boosting
+  * Voting classifiers
+* Clustering fundamentals
+
+  * Basics of clustering
+  * K-means: finding optimal cluster count
+* Meta classifiers
+
+  * Weak vs eager learners
+* Ensemble methods
+
+  * Bagging → Random Forests
+  * Boosting → XGBoost, AdaBoost, LightGBM
+
+---
