@@ -1,77 +1,211 @@
+GitHub Copilot
+
+Below are concise answers to each question. For items where a diagram helps understanding, "Diagram recommended" is noted.
+
 Unit 1 Questions
 
 1. Define Machine Learning (ML).
-2. List the applications of Machine Learning.
-3. Explain Supervised Machine Learning with an example.
-4. Explain Probably Approximately Correct (PAC) learning with an example.
-5. Explain Model Selection and Generalization with an example.
-6. Explain the Dimensions of Supervised Machine Learning Algorithms with an example.
-7. Explain VC dimension with example.
-8. Why is VC important?
-9. What are the challenges of PAC learning?
+- ML is the study and practice of algorithms that improve performance on tasks by learning patterns from data rather than being explicitly programmed.  
+- Diagram recommended: flow of data → model → predictions → feedback.
 
+2. List the applications of Machine Learning.
+- Common applications: classification (spam, medical diagnosis), regression (price forecasting), clustering (customer segmentation), recommendation systems, NLP, computer vision, anomaly detection, reinforcement learning for control/games.
+
+3. Explain Supervised Machine Learning with an example.
+- Supervised learning maps inputs x to labeled outputs y using training pairs; model learns to predict y from x (e.g., house-price prediction from features).  
+- Diagram recommended: labeled dataset → training → model → predictions.
+
+4. Explain Probably Approximately Correct (PAC) learning with an example.
+- PAC formalizes learnability: given hypothesis class H, learner outputs hypothesis h that with high probability (1−δ) has error ≤ ε after enough samples. Example: learning a threshold function on line with sample complexity proportional to (1/ε) log(1/δ).
+
+5. Explain Model Selection and Generalization with an example.
+- Model selection chooses model/hyperparameters that generalize (low test error) rather than just fit training data (avoid overfitting). Example: choosing polynomial degree that minimizes validation error.  
+- Diagram recommended: training/validation/test split and bias–variance tradeoff curve.
+
+6. Explain the Dimensions of Supervised Machine Learning Algorithms with an example.
+- Dimensions include hypothesis complexity, sample size, noise level, computational cost, and choice of loss/regularization. Example: increasing model complexity (degree) reduces bias but increases variance.
+
+7. Explain VC dimension with example.
+- VC dimension measures capacity: the largest set size that a hypothesis class can shatter (classify all labelings). Example: linear classifiers in 2D have VC dimension 3 (can shatter 3 non-collinear points).
+
+8. Why is VC important?
+- VC dimension gives sample complexity bounds for learnability and helps predict overfitting risk: higher VC → need more data to generalize.
+
+9. What are the challenges of PAC learning?
+- Challenges: large hypothesis classes requiring many samples, noisy labels, computational intractability of empirical risk minimization, and distributional assumptions not holding in practice.
 
 Unit 2 Questions
 
 1. What is a feature? (2 marks)
+- A feature is an individual measurable property or attribute (input variable) used by a model (e.g., age, income).
+
 2. What is feature extraction? (2 marks)
+- Transforming raw data into informative features (dimension reduction, signal processing, embeddings) to improve model performance.
+
 3. Explain forward feature selection techniques with example. (4 marks)
+- Greedy method: start empty, iteratively add the feature that most improves validation metric until stopping. Example: sequential forward selection for regression based on validation RMSE.  
+- Diagram recommended: iterative add feature flow.
+
 4. Explain backward feature selection techniques with example. (4 marks)
+- Start with full feature set, iteratively remove the least useful feature (smallest impact on metric) until a stopping criterion. Example: recursive feature elimination (RFE) with an SVM.  
+- Diagram recommended: iterative remove feature flow.
+
 5. Explain the following preprocessing steps of data: (4 marks)
-    - Normalization
-    - Scaling
-    - Standardization
-    - Managing missing values
+    - Normalization: scale features to a fixed range (e.g., [0,1]) to remove units differences.
+    - Scaling: general term for multiplying/dividing by constants (min-max scaling, robust scaling).
+    - Standardization: shift to zero mean and unit variance (z-score).
+    - Managing missing values: impute (mean/median/mode, model-based), drop rows/columns, or use algorithms tolerant to missing data.
+
 6. Explain PCA with core concepts and kernel PCA
+- PCA: linear method that finds orthogonal directions (principal components) of maximal variance; reduce dimensionality by projecting onto top eigenvectors of covariance.  
+- Kernel PCA: extends PCA via kernel trick to capture nonlinear structure by performing PCA in implicit feature space.  
+- Diagram recommended: data cloud, principal axes, projection.
+
 7. Simplify the given PCA with examples and eigen values and eigen vectors
+- Procedure: center data → compute covariance matrix → eigen-decomposition → sort eigenvalues descending → principal components = eigenvectors → project data onto top-k components. Example: 2D points → compute 2 eigenvalues/eigenvectors; larger eigenvalue = main direction.
+
 8. Explain LDA with example
+- Linear Discriminant Analysis finds linear combinations maximizing class separability (ratio of between-class to within-class scatter). Example: two-class face recognition projecting to 1D then thresholding.  
+- Diagram recommended: class means, projection line, class separation.
+
 9. Explain various feature selection techniques (any two)
+- Filter methods: rank features by univariate scores (e.g., mutual information, chi-square), fast and independent of model.  
+- Wrapper methods: use model performance to evaluate subsets (e.g., forward/backward selection, RFE); more accurate but expensive.
+
 10. Explain any four forward feature selection techniques.
+- Sequential Forward Selection (SFS): add best feature each step.  
+- Greedy addition with cross-validation: same as SFS but using CV score.  
+- Forward selection with regularization-aware scoring: consider stability under L1/L2.  
+- Forward stepwise with interaction search: add single features and pairwise interactions when beneficial.
+
 11. Explain any four backward feature selection techniques.
-
-
+- Recursive Feature Elimination (RFE): remove least important features per model importance ranking.  
+- Backward Elimination using p-values: remove features with highest p-value iteratively (linear models).  
+- Backward selection with cross-validation: remove and compare CV score.  
+- Regularization-driven pruning: start full, use L1 penalty to shrink coefficients and drop zeroed features.
 
 Unit 3 Questions
-1. What is regression?
-2. What is linear regression?
-3. What is logistic regression?
-4. What are the various types of linear regression? (Explain any two in detail)
-5. Explain any two linear regression models with examples (lasso and polynomial).
-6. Explain logistic regression with any two types 
-7. What is the stochastic process?
-8. What is the stochastic gradient descent algorithm with numerical example
-9. Explain the following example stepwise using gradient descent algorithm 
-10. What is grid search
-11. Explain grid search with search
-12. What is an exhausting search
-13. What is optimum select with respect to grid search 
-14. What are the core principles of grid search 
-15. Compare grid search with random search 
-16. When should you use grid search?
 
+1. What is regression?
+- Regression predicts continuous target values from input features by modeling relationships between inputs and output.
+
+2. What is linear regression?
+- Model that assumes linear relation y = Xβ + ε and estimates β (e.g., ordinary least squares minimizing squared error).
+
+3. What is logistic regression?
+- Model for binary classification using logistic/sigmoid link: P(y=1|x)=σ(x·β); trained by maximizing likelihood (cross-entropy loss).
+
+4. What are the various types of linear regression? (Explain any two in detail)
+- Ordinary Least Squares (OLS): minimize RSS, closed-form β = (XᵀX)^{-1}Xᵀy.  
+- Ridge Regression: L2-regularized OLS to reduce variance and multicollinearity; objective = RSS + λ||β||².
+
+5. Explain any two linear regression models with examples (lasso and polynomial).
+- Lasso (L1): adds L1 penalty to encourage sparsity (feature selection). Example: selecting subset of predictors in high-dim data.  
+- Polynomial regression: augment X with polynomial terms to model nonlinear relationships; still linear in parameters.
+
+6. Explain logistic regression with any two types
+- Binary logistic regression: standard sigmoid output for two classes.  
+- Multinomial logistic regression: generalizes to >2 classes using softmax and cross-entropy loss.
+
+7. What is the stochastic process?
+- A stochastic process is a family of random variables indexed by time or space representing evolving randomness (e.g., random walk).
+
+8. What is the stochastic gradient descent algorithm with numerical example
+- SGD updates parameters using noisy gradient from single (or mini-batch) example: θ := θ − η ∇ℓ_i(θ). Example: for linear regression with one sample x,y: gradient = (xᵀθ − y)x; update shown numerically per step.  
+- Diagram recommended: noisy gradient steps toward minimum.
+
+9. Explain the following example stepwise using gradient descent algorithm
+- (If specific example provided, show iterations: initialize θ0, compute gradient on loss, update θ1 = θ0 − ηg, repeat until convergence; list numeric updates.)  
+- Diagram recommended: loss curve and parameter updates.
+
+10. What is grid search
+- Exhaustive search over specified hyperparameter grid to find combination that optimizes validation metric.
+
+11. Explain grid search with search
+- Grid search systematically evaluates all combinations; usually combined with CV for robust selection.
+
+12. What is an exhaustive search
+- Complete enumeration of all candidate solutions; guarantees finding best in search space but can be computationally expensive.
+
+13. What is optimum select with respect to grid search
+- Choosing hyperparameter combination with best validation (CV) score; may require tie-breaking and testing on held-out test set.
+
+14. What are the core principles of grid search
+- Define finite parameter grids, evaluate each combination (often via CV), choose best per validation metric, finally assess on test set.
+
+15. Compare grid search with random search
+- Grid: systematic but wastes evaluation on unimportant dims, expensive in high-dim space.  
+- Random: samples random combos; often finds good results faster when only few hyperparameters matter.
+
+16. When should you use grid search?
+- Use when search dimensionality is small, computation budget allows exhaustive search, and you need reproducible thorough tuning.
 
 Unit 4 Questions
 
-What is base theorem?
-Explain naive bayes theorem with example.
-Solve numerical regarding naive bayes theorem.
-Explain bernoulli naive bayes theorem . 
-Explain multinomial naive bayes theorem with example.
-What is SVM ? / Define SVM 
-Explain SVM and it's core concepts.
-What is the difference between linear SVC and SVC ( kernel = " linear " )
-What is the role of kernel trick in SVM ? 
-State advantages and limitations of gaussian naive bayes ( Also write applications ) .
-Explain the difference between linear SVM and kernel SVM .
-Apply bernoulli NV and show prediction steps .
+1. What is Bayes theorem?
+- P(A|B) = P(B|A)P(A) / P(B); relates conditional probabilities.
 
+2. Explain naive bayes theorem with example.
+- Naive Bayes applies Bayes with conditional independence assumption across features: P(y|x) ∝ P(y)∏P(x_i|y). Example: spam detection with word probabilities.  
+- Diagram recommended: generative model plate diagram.
+
+3. Solve numerical regarding naive bayes theorem.
+- (Generic method) Compute class priors P(y), likelihoods P(x_i|y), multiply and normalize to get posterior; predict argmax posterior. Provide numbers if given.
+
+4. Explain Bernoulli naive bayes theorem.
+- Bernoulli NB models binary features (feature present/absent) with Bernoulli likelihood per feature given class; suitable for binary text features.
+
+5. Explain multinomial naive bayes theorem with example.
+- Multinomial NB models counts (word frequencies) using multinomial distribution; common for document classification. Example: email classification using term counts and class priors.
+
+6. What is SVM ? / Define SVM
+- Support Vector Machine finds a decision boundary (hyperplane) maximizing margin between classes; uses support vectors and can use kernels for nonlinearity.
+
+7. Explain SVM and its core concepts.
+- Core concepts: margin, support vectors, hinge loss, regularization parameter C (tradeoff slack vs margin), kernels to map data to higher-dim space for separability.  
+- Diagram recommended: margin, support vectors, hyperplane.
+
+8. What is the difference between linear SVC and SVC (kernel = "linear")
+- linearSVC (sklearn.svm.LinearSVC) uses a linear solver (often liblinear) optimized for large-scale linear problems and uses a different formulation; SVC(kernel="linear") uses libsvm with different optimization, supports probability estimates, and different regularization/dual vs primal settings.
+
+9. What is the role of kernel trick in SVM ?
+- Kernel trick computes inner products in high-dimensional feature space implicitly via kernel function k(x,x'), enabling nonlinear separation without explicitly mapping features.
+
+10. State advantages and limitations of gaussian naive bayes (Also write applications).
+- Advantages: simple, fast, works well with small data, robust to irrelevant features.  
+- Limitations: strong conditional independence assumption often violated; continuous features assumed Gaussian may be wrong.  
+- Applications: text classification (with appropriate variant), baseline classifiers, medical diagnosis (quick probabilistic estimates).
+
+11. Explain the difference between linear SVM and kernel SVM.
+- Linear SVM finds a linear decision boundary in input space; kernel SVM implicitly maps data to higher-dimensional space via kernel to find nonlinear boundary in original space.
+
+12. Apply Bernoulli NV and show prediction steps.
+- Steps: compute P(y) from training labels; for each feature compute P(x_i=1|y) with Laplace smoothing; for a new binary vector x, compute log-posterior for each class: log P(y)+Σ_i [x_i log P(x_i=1|y)+(1−x_i) log P(x_i=0|y)]; choose class with higher posterior.
 
 Unit 5 Questions
 
-Define entropy / impurity .
-Differentiate between bagging and boosting.
-What is the role of voting classifier in ensemble learning ?
-What does the parameter 'k' represent ? 
-Differentiate between random forest and gradient boosting.
-Explain impurity measures ( Gini index ) .
-Explain random forest as an ensemble method & how does it reduce overfitting .
+1. Define entropy / impurity .
+- Entropy (Shannon) for class distribution p_i: H = −Σ p_i log₂ p_i; measures impurity/uncertainty. Used as split criterion in decision trees.
+
+2. Differentiate between bagging and boosting.
+- Bagging (bootstrap aggregating): build many independent base learners on bootstrap samples and average/vote to reduce variance (e.g., Random Forest).  
+- Boosting: sequentially build learners where each focuses on previous errors, combining weighted learners to reduce bias (e.g., AdaBoost, Gradient Boosting).
+
+3. What is the role of voting classifier in ensemble learning ?
+- Voting classifier aggregates predictions from multiple diverse models by majority vote (hard) or averaged probabilities (soft) to improve robustness and accuracy.
+
+4. What does the parameter 'k' represent ?
+- Context needed: commonly k is number of neighbors in k-NN, or number of folds in k-fold CV, or number of clusters in k-means. Mention which context is intended.
+
+5. Differentiate between random forest and gradient boosting.
+- Random Forest: parallel bagged decision trees with feature randomness; reduces variance with many uncorrelated trees.  
+- Gradient Boosting: sequentially fit trees to residuals using gradient descent on loss; focuses on reducing bias and can overfit if not regularized.
+
+6. Explain impurity measures ( Gini index ) .
+- Gini impurity: G = 1 − Σ p_i²; measures probability of incorrect classification if randomly labeling per distribution. Used to choose splits in CART trees.
+
+7. Explain random forest as an ensemble method & how does it reduce overfitting .
+- Random Forest: builds many decision trees on bootstrap samples, at each split chooses a random subset of features; average predictions to reduce variance and decorrelate trees, thereby reducing overfitting compared to single deep tree.  
+- Diagram recommended: many trees → voting/averaging.
+
+If you want full worked numerical examples, step-by-step derivations, or printable formatted answers for each question (or a version arranged for inclusion into your RTF file), tell me which specific questions to expand and I will produce them.
