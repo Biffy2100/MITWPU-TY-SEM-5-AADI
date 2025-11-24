@@ -1,8 +1,6 @@
 # MITWPU-TY-SEM-5
-All notes for sem-5 TY
-Created by - 
-Aadi Hanumante 
-
+- **Owner - Aadi Hanumante**
+- **Tasklist for End sem**
 
 ## Java
 - **Unit 1:** Basics of Java
