@@ -20,7 +20,7 @@
 - **Unit 1:** Data Analytics Overview
 - **Unit 2:** Dealing with Different Types of Data
 - **Unit 3:** Basics of Statistics ✔️
-- **Unit 4:** Data Preprocessing
+- **Unit 4:** Data Preprocessing ✔️
 - **Unit 5:** Data Visualization for Decision Making
 
 ## OS
@@ -28,4 +28,4 @@
 - **Unit 2:** Process Management
 - **Unit 3:** CPU Scheduling Algorithms
 - **Unit 4:** Memory Management
-- **Unit 5:** File Management
+- **Unit 5:** File Management ✔️
