@@ -7,7 +7,7 @@
 - **Unit 2:** Inheritance, Interface and Packages
 - **Unit 3:** Exception Handling and Multithreading
 - **Unit 4:** Java 8 Features and Collections Framework
-- **Unit 5:** Java Database Connectivity (JDBC)
+- **Unit 5:** Java Database Connectivity (JDBC) ✔️
 
 ## AML
 - **Unit 1:** Introduction to AML
