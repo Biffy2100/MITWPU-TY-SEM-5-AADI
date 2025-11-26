@@ -23,9 +23,25 @@
 - **Unit 4:** Data Preprocessing ✔️
 - **Unit 5:** Data Visualization for Decision Making
 
+<<<<<<< Updated upstream
 ## OS
 - **Unit 1:** Overview of OS and System Calls
 - **Unit 2:** Process Management
 - **Unit 3:** CPU Scheduling Algorithms
 - **Unit 4:** Memory Management
 - **Unit 5:** File Management ✔️
+=======
+FDA-
+Unit 1 Data Analytics Overview:
+Unit 2 Dealing with Different types of data:
+Unit 3 Basics of statistics: ✓
+Unit 4 Data preprocessing: 
+Unit 5 Data Visualization for Decision making:
+
+OS-
+Unit 1 Overview of and System calls in OS:
+Unit 2 Process Management:
+Unit 3 CPU scheduling algorithms:
+Unit 4 Memory management: ✓
+Unit 5 File Management:
+>>>>>>> Stashed changes
