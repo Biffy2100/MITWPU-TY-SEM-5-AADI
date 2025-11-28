@@ -2,19 +2,16 @@ import java.util.function.*;
 
 public class A {
     public static void main(String[] args) {
-        Supplier<Integer> supplier = () -> 65436543;
-        System.out.println(supplier.get());
+        Supplier<Integer> s = () -> 65436543;
+        System.out.println(s.get());
 
-        Consumer<String> consumer = (s) -> System.out.println("Consumed: " + s);
-        consumer.accept("Java Functional Interfaces");
+        Consumer<String> c = (y) -> System.out.println("Consumed: " + y);
+        c.accept("Java Functional Interfaces");
 
-        // Function<Integer, Integer> function = (x) -> x * x;
-        // System.out.println("Square of 5: " + function.apply(5));
+        Function<Integer, Integer> function = (x) -> x * x;
+        System.out.println("Square of 5: " + function.apply(5));
 
-        Function<Integer, String> m = (x) -> "Cube of " + x + " is " + (x * x * x);
-        System.out.println("Cube of 3: " + m.apply(3));
-
-        Predicate<Integer> predicate = (x) -> x > 0;
-        System.out.println("Is 10 positive? " + predicate.test(10));
+        Predicate<Integer> p = (x) -> x > 0;
+        System.out.println("Is 10 positive? " + p.test(10));
     }
 }
